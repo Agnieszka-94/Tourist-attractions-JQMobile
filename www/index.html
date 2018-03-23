@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+			<div data-role="popup" id="menu" data-theme="b">
+		        <ul data-role="listview" data-inset="true" style="">
+		            <li>Choose your drink:</li>
+					<li><a href="#frappe">Frappe</a></li>
+					<li><a href="#chai">Chai latte</a></li>
+					<li><a href="#martini">Espresso Martini</a></li>
+		        </ul>
+			</div>
+
+ 			<div data-role="header">
+				<a href="#menu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b"></a>
+				<h1>Tourist attractions</h1>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#pageone" class="ui-btn-active">Photos</a></li>
+							<li><a href="#pagetwo">Order</a></li>
+						</ul>
+					</div>
+			</div>
+
+			<div data-role="navbar">
+				<a href="#popupM" data-rel="popup" data-position-to="window" data-transition="fade"><p>Masuria</p></a>
+				<a href="#popupP" data-rel="popup" data-position-to="window" data-transition="fade"><p>Pomerania</p></a>
+				<a href="#popupT" data-rel="popup" data-position-to="window" data-transition="fade"><p>The Tatra Mountains</p></a>
+
+				<div data-role="popup" id="popupM" data-overlay-theme="b" data-theme="b" data-corners="false" style="display:block">
+				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" style="display:block" >Close</a><img class="popphoto" src="../www/img/Mazury.jpg" style="max-height:500px;" alt="Masuria">
+				</div>
+				<div data-role="popup" id="popupP" data-overlay-theme="b" data-theme="b" data-corners="false">
+				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../www/img/Pomorze.jpg" style="max-height:500px;" alt="Pomerania">
+				</div>
+				<div data-role="popup" id="popupT" data-overlay-theme="b" data-theme="b" data-corners="false">
+				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../www/img/Tatry.jpeg" style="max-height:500px;" alt="The Tatra Mountains">
+				</div>
+			</div>
+
+			<img src="img/favicon.png" alt="Tourist" id="img"/>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>Thank you for your visit! AT &copy; 2018</h1>
+			</div> 
+		</div>		 
+
+		<!-- drink 1 page -->
+		<div data-role="page" id="frappe">
+			<div data-role="popup" id="menu_one" data-theme="b">
+		        <ul data-role="listview" data-inset="true" style="">
+		            <li>Choose your drink:</li>
+					<li><a href="#frappe">Frappe</a></li>
+					<li><a href="#chai">Chai latte</a></li>
+					<li><a href="#martini">Espresso Martini</a></li>
+		        </ul>
+			</div>
+
+ 			<div data-role="header">
+				<a href="#menu_one" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b"></a>
+				<h1>Frappe</h1>
+				<a href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home"></a>
+			</div>
+
+			 <div data-role="main" class="ui-content">
+					<p><img src="img/frappe.jpg" class="drinki"/></p>
+					<p class="center">Kokosowy posmak przywodzi na myśl drinki z palemką pite upalnym latem na tropikalnych wyspach.<br>Smak, dzięki któremu poczujesz się jak na urlopie!</p>
+					<h2>Składniki:</h2>
+					<ul>
+						<li>1 filiżanka espresso</li>
+						<li>5 kostek lodu</li>
+						<li>0,5 szkalanki wody</li>
+						<li>0,5 szklanki mleka</li>
+						<li>2 łyżeczki syropu kokosowego</li>
+						<li>bita śmietana</li>
+						<li>wiórki kokosowe</li>
+					</ul>
+
+					<p>Przygotuj espresso lub wsyp kawę do szklanki, dodaj wody i syrop.<br>Spień kawę spieniaczem do mleka - podwoi lub nawet potroi swoją objętość.<br>Dodaj kostki lodu i mleko.<br>Udekoruj bitą śmietaną i wiórkami kokosowymi.<br>Smacznego!</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>Thank you for your visit! AT &copy; 2018</h1>
+			</div> 
+		</div> 
+
+		<!-- drink 2 page -->
+		<div data-role="page" id="chai">
+			<div data-role="popup" id="menu_two" data-theme="b">
+		        <ul data-role="listview" data-inset="true" style="">
+		            <li>Choose your drink:</li>
+					<li><a href="#frappe">Frappe</a></li>
+					<li><a href="#chai">Chai latte</a></li>
+					<li><a href="#martini">Espresso Martini</a></li>
+		        </ul>
+			</div>
+			<div data-role="header">
+				<a href="#menu_two" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b"></a>
+				<h1>Chai latte</h1>
+				<a href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home"></a>
+			</div>
+
+			 <div data-role="main" class="ui-content">
+				<p><img src="img/chai.jpg" class="drinki"/></p>
+				<p class="center">Chai latte to torchę kawa, a trochę herbata.<br>Właściwie kawy w niej nie ma, a z drugiej strony sprzedawana jest jako kawa… Jednym słowem – zagadkowy napój! </p>
+				<h2>Składniki:</h2>
+				<ul>
+					<li>2/3 szklanki mleka</li>
+					<li>1/3 szklanki wody</li>
+					<li>1 łyżeczka mieszanki przypraw: cynamon, kardamon, imbir, ziarenka wanili</li>
+					<li>1 torebka herbaty</li>
+					<li>cukier brązowy do smaku</li>
+				</ul>
+
+				<p>Wszystkie składniki umieść w garnku i zaczekaj do momentu zagotowania się oraz rozpuszczenia się cukru. Gotową kawę przelej do kubka/ filiżanki i podawaj że spienionym mlekiem. Wierzch można posypać przyprawą.<br>Smacznego!</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>Thank you for your visit! AT &copy; 2018</h1>
+			</div> 
+		</div> 
+
+		<!-- drink 3 page -->
+		<div data-role="page" id="martini">
+			<div data-role="popup" id="menu_three" data-theme="b">
+		        <ul data-role="listview" data-inset="true" style="">
+		            <li>Choose your drink:</li>
+					<li><a href="#frappe">Frappe</a></li>
+					<li><a href="#chai">Chai latte</a></li>
+					<li><a href="#martini">Espresso Martini</a></li>
+		        </ul>
+			</div>
+			<div data-role="header">
+				<a href="#menu_three" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b"></a>
+				<h1>Espresso Martini</h1>
+				<a href="#pageone" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home"></a>
+			</div>
+
+			 <div data-role="main" class="ui-content">
+				<p><img src="img/martini.jpg" class="drinki"/></p>
+				<p class="center">Chłodne zimowe wieczory dają się coraz bardziej we znaki?<br>Sposobów na rozgrzanie organizmu i poprawę samopoczucia, warto szukać w kuchni! Doskonałą i smaczną alternatywą dla gorącej czekolady czy naturalnych naparów herbacianych będą aromatyczne kompozycje kawy i alkoholu. Espresso Martini jest to elegancki drink, który zachwyci wielbicieli wytrawnych smaków. Jeżeli kochacie espresso to zakochacie się w również w alkoholowej wersji Martini. Na pewno będziecie zachwyceni! </p>
+				<h2>Składniki:</h2>
+				<ul>
+					<li>1 szot espresso</li>
+					<li>30ml wódki</li>
+					<li>40ml Kahlua</li>
+				</ul>
+
+				<p>Napełnij szejker lodem. Wlej do niego espresso, wódkę i Kahluę. Potrząsaj aż do schłodzenia.<br>Rozlej do dwóch schłodzonych wcześniej kieliszków.<br>Do ozdoby dodaj kilka ziaren kawy.<br>Smacznego!</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>Thank you for your visit! AT &copy; 2018</h1>
+			</div> 
+		</div>
+
+		
+		<!-- Mobile device details page -->
+		<div data-role="page" id="pagetwo">
+			<div data-role="popup" id="mobile-menu" data-theme="b">
+		        <ul data-role="listview" data-inset="true" style="">
+		            <li>Choose your drink:</li>
+					<li><a href="#frappe">Frappe</a></li>
+					<li><a href="#chai">Chai latte</a></li>
+					<li><a href="#martini">Espresso Martini</a></li>
+		        </ul>
+			</div>
+ 			<div data-role="header">
+ 				<a href="#mobile-menu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b"></a>
+				<h1>Tourist attractions</h1>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#pageone">Photos</a></li>
+							<li><a href="#pagetwo" class="ui-btn-active">Order</a></li>
+						</ul>
+					</div>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<label for="text-basic">Name and surname:</label>
+				<input name="text-basic" id="text-basic" value="" type="text">
+
+				<label for="date">Date:</label>
+				<input name="date" id="date" value="" type="date">
+
+				<div class="ui-field-contain">
+					<label for="select-native-fc">Choose location:</label>
+					<select name="select-native-fc" id="select-native-fc">
+						<option>Europe</option>
+						<option>United States</option>
+						<option>Asia</option>
+						<option>Australia</option>
+						<option>Africa</option>
+					</select>
+				</div>
+
+				<label for="slider-fill">How many people:</label>
+				<input type="range" name="slider-fill" id="slider-fill" value="2" min="0" max="15" step="1" data-highlight="true">
+
+				<div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+					<a href="#" class="ui-shadow ui-btn ui-corner-all">Approve</a>
+					<a href="#" class="ui-shadow ui-btn ui-corner-all">Reject</a>
+				</div>
+
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>Thank you for your visit! AT &copy; 2018</h1>
+			</div> 
+		</div> 
+	</body>
+</html>
